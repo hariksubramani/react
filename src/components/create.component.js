@@ -69,7 +69,7 @@ export default class Create extends Component {
                     <input type="text" 
                       className="form-control"
                       value={this.state.business_name}
-                      onChange={this.onChangeBusinessName}
+                      onChange={(e) => this.onChangeBusinessName(e)}
                       />
                 </div>
                 <div className="form-group">

@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import Create from './components/create.component';
 import Edit from './components/edit.component';
 import Index from './components/index.component';
+import ReferenceDemoComponent from './components/ReferenceDemo';
 
 function App() {
   return (   
@@ -24,6 +25,9 @@ function App() {
     <Link to={'/index'} className="nav-link">
     index
     </Link>
+    <Link to={'/reference'} className="nav-link">
+    Reference
+    </Link>
     </li>
     </ul>
     </div>
@@ -40,7 +44,7 @@ function App() {
     <Route exact path="/create" component={Create}></Route>
     <Route path="/index" component={Index}></Route>
     <Route path="/edit/:id" component={Edit}></Route>
-
+    <Route path="/reference" component={ReferenceDemoComponent}></Route>
     </Switch>
 
     </div>
